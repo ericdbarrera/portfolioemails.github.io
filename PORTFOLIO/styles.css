@@ -1,0 +1,440 @@
+* {
+    font-family: monospace;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --background-color1: #171515;
+    --background-color2: #41433e;
+    --accent-color: #da7b36;
+    --accent-color1: #a14300;
+    --accent-color2: #facc07;
+    --font-color1: #ffffff;
+    --font-color2: #f8f7d4;
+}
+
+
+
+body{
+    font-family: monospace;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    background-color: var(--background-color1);
+}
+
+h2 {
+    font-family: monospace;
+    font-size: 30px;
+    text-align: center;
+}
+
+h4 {
+    font-family: monospace;
+    font-size: 20px;
+    text-align: center;
+}
+
+#highlight {
+    color: var(--accent-color);
+}
+
+ /* NAV BAR */
+.navbar {
+    width: 100%;
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    position: fixed;
+    z-index: 999;
+    background-color: var(--accent-color);
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 0;
+}
+
+
+#navbar-logo {
+    display: flex;
+    flex: 0.0;
+    width: auto;
+    height: auto;
+    padding: 0;
+    background-color: var(--background-color1);
+
+}
+
+
+#nav-links   {
+    display: inline-block;
+    flex: 1;
+    padding: 0;
+    width: 100%;
+    height: auto;
+
+}
+
+nav ul  {
+    display: flex;
+    flex-direction: row;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    color: var(--font-color2);
+    background-color: var(--accent-color);
+    align-items: center;
+}
+
+nav ul li {
+    display: inline;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 25px;
+    border: black solid 1px;
+    width: 100%;
+    text-decoration: none;
+    list-style: none;
+    color: var(--font-color2);
+    background-color: var(--accent-color)
+}
+
+a {
+    text-decoration: none;
+    color: var(--font-color2);
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 100%;
+    width: 100%;
+    font-size: 1.7rem;
+}
+
+
+/* NAVIGATION BAR ENDS */
+
+
+
+
+/* MAIN CONTENT */
+/* COVER */
+.cover-container {
+    display: flex;
+    flex-direction: row;
+    width: 100vh;
+    height: 100vh;
+    color: var(--font-color2);
+    background-color: var(--background-color1);
+    align-items: center;
+}
+
+#big-logo {
+    width: auto;
+    height: auto;
+    position: block;
+    margin-left: auto;
+}
+
+#intro-text {
+    font-size: 18px;
+    font-weight:400;
+    line-height: 1.5;
+    padding: 20px;
+    position: block;
+    top: 150px;
+
+}
+
+
+.btn {
+    background-color: var(--accent-color);
+    border: none;
+    color: var(--background-color1);
+    padding: 15px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 900;
+    height: 40px;
+    margin-left: 5rem;
+    margin-top: 1rem;
+}
+
+
+
+/* PORTFOLIO SECTION */
+
+
+.grid-container {
+    display: grid;
+    grid-template-rows: 33% 33% 33%;
+    position: relative;
+    grid-gap: 10px;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    width: 100%;
+    max-width: 600px;
+}
+
+.emails {
+    height: 300px;
+    width: 200px;
+    padding: 0;
+    margin: 10px;
+    border-radius: 10px;
+    background-color: var(--font-color2);
+    max-width: 200px;
+    max-height: 300px;
+    min-width: none;
+    min-height: none;
+}
+
+#portfolio>h2 {
+    color: var(--font-color2);
+    text-align: center;
+    margin: 0 auto;
+    padding: 10px;
+    border: white solid 1px;
+}
+
+
+
+#portfolio {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    padding: 10px;
+    margin: 10px;
+    background-color: var(--accent-color);
+    border-radius: 10px;
+    align-items: center;
+    color:#000000;
+    padding: 20px;
+    border: red solid 3px;
+}
+
+#portfolio-text {
+    font-size: 20px;
+    padding-bottom: 15px;
+    padding-top: 15px;
+    padding-left: 20px;
+    border: blue solid 1px;
+}
+
+.features {
+    display: inline-block;
+    height: auto;
+    padding: 10px;
+    margin: 8px auto;
+    background-color: var(--font-color2);
+    color: var(--background-color1);
+    font-weight: bolder;
+    font-size: larger;
+    border: 2px solid var(--background-color1);
+    border-radius: 10px;
+    align-items: center;
+    
+}
+
+#features-container {
+    padding: 10px;
+    border: greenyellow solid 1px;
+}
+
+.grid-container {
+    height: auto;
+    width: 100%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+
+
+/* SKILLS SECTION */
+
+
+.skills-container {
+    display: inline-block;
+    height: auto;
+    width: 100%;
+    padding: 15px;
+    margin: 10px;
+    background-color: var(--font-color2);
+    border-radius: 10px;
+    color: var(--background-color2);
+}
+
+.list {
+    border: blue solid 1px;
+    width: 45%;
+    display: block;
+    margin: 10px;
+    padding: 20px;
+}
+
+.pic {
+    display: block;
+    margin: 10px;
+}
+
+.skills-container fieldset {
+    color: var(--background-color2);
+    background-color: var(--font-color2);
+}
+
+
+#keyboard-image {
+    height: auto;
+    width: 45%;
+    padding: 10px;
+    border-radius: 15px;
+    display: inline-block;
+}
+
+
+
+
+/* CERTIFICATIONS SECTION*/
+
+fieldset {
+    border: 2px solid var(--accent-color);
+    border-radius: 10px;
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    background-color: var(--font-color2);
+}
+
+
+.icons {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    width: 50px;
+}
+
+/* services SECTION */
+
+.services-container {
+    display: inline-block;
+    padding: 20px;
+    margin: 20px;
+    border-radius: 10px;
+    background-color: white;
+    color: var(--background-color1);
+    border: 5px solid blue;
+    width: 100%;
+}
+
+#services-text {
+    display: block;
+    padding: 10px;
+    line-height: 2;
+    font-size: 18px;
+    position: relative;
+
+}
+
+/* ABOUT ME SECTION 
+-get photo taken
+-card style for about me section side by side with photo */
+
+
+
+
+
+
+
+
+
+
+/* CONTACT FORM SECTION 
+    remove logo - enlarge text area for form
+    add email to form
+    add email stock photo
+    add email validation
+    set up through mailchimp form
+
+*/
+
+#text-form {
+    width: 100%;
+    padding: 10px;
+    background-color: var(--font-color2);
+    border-radius: 10px;
+    align-items: center;
+    height:200px;
+    width: 100%;
+}
+
+form {
+    display: flex;
+    color:#000000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    align-items: center;
+    background-color: var(--font-color1);
+    color: var(--background-color1);
+    border: red solid 2px;
+}
+
+.form-space {
+    width: 100%;
+    border-radius: 10px;
+    height: 3em;
+}
+
+form > label {
+    font-size: 20px;
+    font-family: monospace;
+    font-weight: bolder;
+    color: var(--background-color1);
+}
+ form > button {
+    margin: 0;
+ }
+
+/* FOOTER SECTION */
+
+.contact-container {
+    display: flex;
+    position: relative;
+    width: 100%;
+    font-family: monospace;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 10px;
+    font-size: 18px;
+    width: 100vh;
+}
+.btn2 {
+    background-color: var(--font-color1);
+    border: none;
+    color: var(--background-color1);
+    padding: 12px;
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 900;
+    height: 40px;
+    width: 30vh;
+    margin-left: 5rem;
+    margin-top: 1rem;
+    cursor: pointer;
+    border: 2px solid var(--background-color1);
+}

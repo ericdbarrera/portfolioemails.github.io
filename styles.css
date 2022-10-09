@@ -1,0 +1,269 @@
+* {
+    font-family: monospace;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+
+@media (max-width: 800px) {
+   body {
+    font-size: 16px;
+    }
+    h {
+        font-size: 24x;
+    }
+}
+
+
+:root {
+    --background-color1: #171515;
+    --background-color2: #41433e;
+    --accent-color: #da7b36;
+    --accent-color1: #a14300;
+    --accent-color2: #facc07;
+    --font-color1: #ffffff;
+    --font-color2: #f8f7d4;
+}
+
+
+
+body{
+    font-family: monospace;
+    font-size: 1.2rem;
+    margin: 0 auto;
+    background-color: var(--background-color1);
+}
+
+.title {
+    font-family: monospace;
+    font-size: 50px;
+    text-align: center;
+    color: var(--accent-color);
+    font-family: 'Courier New', Courier, monospace;
+    margin-top: 10px
+}
+
+
+#highlight {
+    color: var(--accent-color);
+    
+}
+
+
+
+
+/* MAIN CONTENT */
+/* COVER */
+.cover-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    justify-items: center;
+    align-items: center;
+    height: 100vh;
+    color: var(--font-color2);
+    background-color: var(--background-color1);
+    background-image: url(https://images.unsplash.com/photo-1654484521164-92bf7605cac0?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1174&q=80);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: overlay;
+    border: 1px solid orange;
+}
+
+#big-logo {
+    height: 300px;
+    border: 1px solid green;
+    display: flex;
+    align-items: center;
+
+}
+
+#logo-pic {
+    border-radius: 10px;
+    border: 1px solid blue;
+    height: 500px;
+}
+
+
+#intro-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    line-height: 2;
+    text-align: center;
+    height: 600px;
+    width: 700px;
+    background-color:rgb(23, 21, 21, 0.7);
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+
+.btn {
+    background-color: var(--accent-color);
+    border: none;
+    color: var(--font-color2);
+    text-decoration: none;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 900;
+    height: 60px;
+    width: 300px;
+    margin: 15px;
+
+}
+
+.btn:hover {
+    color: var(--background-color2);
+}
+/* PORTFOLIO SECTION */
+
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+    padding: 25px;
+    margin: 0 auto;
+    border-radius: 10px;
+    height: 100%;
+    background-image: url(https://images.unsplash.com/photo-1555949963-ff9fe0c870eb?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80);
+    width: 80%;
+}
+
+
+.emails {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10%;
+    margin: 10px;
+    height: 300px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 10px;
+    transition: 0.2s all;
+    background: 100%;
+    border: 1px solid white;
+    overflow:visible
+}
+
+.emails:hover {
+    background-color:var(--accent-color1);
+    z-index: 0.6;
+}
+
+
+
+
+
+
+.contact-container {
+    display: flex;
+    align-items: center;
+    height: auto;
+    width: 80%;
+    padding: 10px;
+    font-family: monospace;
+}
+
+/* container breaking point 650px */
+#text-form {
+    padding: 10px;
+    background-color: var(--font-color2);
+    border-radius: 10px;
+    align-items: center;
+    height:150px;
+    width: 100%;
+    padding: 5px;
+}
+
+
+
+#codepen {
+    background-color: #87cefa;
+    color: var(--font-color2);
+    border-radius: 60%;
+    height: 45px;
+}
+
+fieldset {
+    border-radius: 10px;
+    color: var(--font-color2);
+    font-size: 18px;
+    height: auto;
+    width: 600px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 25px;
+    transition:cubic-bezier(1, 0, 0, 1) 0.2s;
+    padding: 25px;
+}
+
+
+fieldset>img:hover {
+    transform: scale(1.2);
+    border-radius: 50%;
+
+}
+
+/*FORM SECTION*/
+#form-side {
+    display: flex;
+    flex-direction: row;
+    color:#000000;
+    height: 450px;
+    border-radius: 10px;
+    background-color: var(--background-color2);
+    color: var(--font-color2);
+    padding: 2.5rem;
+    width: 55%;
+    min-width: 500px;
+    align-items: center;
+}
+
+.form-space {
+    width: 100%;
+    border-radius: 10px;
+    height: 2rem;
+    background-color: var(--font-color2);
+}
+
+form > label {
+    font-size: 16px;
+    font-family: monospace;
+    font-weight: bold;
+    color: var(--font-color1);
+
+}
+
+.btn2 {
+    background-color: var(--accent-color1);
+    color: var(--font-color2);
+    padding: 12px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 10px;
+    font-weight: 900;
+    height: 50px;
+    width: 60%;
+    cursor: pointer;
+    border: 2px solid var(--background-color1);
+    transition: 0.2s all;
+    margin-top: 1rem;
+    align-items: center;
+}
+
+.btn2:hover {
+    background-color: var(--accent-color);
+    color: var(--background-color1);
+}
+
+#contact-text {
+    color: var(--font-color1);
+    border: 1px solid red;
+    width: 40%;
+}
